@@ -1,8 +1,7 @@
 
-# Phishing Email Triage Playbook
 
 ## 1. Purpose and scope
-(Write 2 to 3 sentences in your own words: what this playbook covers and who uses it.)
+This playbook describes how a SOC L1 analyst triages user-reported suspicious emails. It covers header, authentication, URL and attachment checks, assigning a verdict, and the response actions for each verdict.
 
 ## 2. Safety rules
 - Never click links or open attachments
@@ -50,7 +49,7 @@
 | Benign / Spam | Close ticket; tell user; tune spam filter if needed |
 
 ## 6. Escalation
-(Write in your own words: when to hand off to L2, for example credentials entered, attachment executed, multiple users affected.)
+Escalate to L2 if a user entered credentials or ran an attachment, if more than one mailbox received the email, or if a malicious IOC already appears in other logs.
 
 ## 7. Documentation
 Each investigated email gets a report using reports/TEMPLATE.md.
