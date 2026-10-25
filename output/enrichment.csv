@@ -1,5 +1,5 @@
 sample_id,ioc,type,vt_detections,urlscan_verdict,abuseipdb_score,notes
-S01,hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176,url,,,,
+S01,hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176,url,<x/y from VirusTotal>,"<urlscan result, e.g. page offline / login form>",,"<one line: domain age, what the page showed>"
 S02,73a0e5d5582ec223d1d4216df506c5ce6961948f76d39f73a84e966b607ea1b7,sha256,25/62,,,"Malicious. Amazon impersonation PDF, VT AI analysis: credential-harvest lure, no JS"
 S03,hxxp://williamcooklaw[.]com/KJexQY2h3iSUzCfdpw5D4r/UX/P7jv2a5ck4dqCKEw22yQrYuq/Mdrx7Bck/nOFCKryK61aJeTbCKOEn/ree/862dmGpL5jZMSlOztCaa/rve7_7M/KU0OxwNLgTxvLNG6XwOarD/7Mree/15KAJanvAJY5DQn6BVa9U/vY_M/WAFuZun0tfw0C27LCRVmcLj8/e5e_rx5/ORaueJJNKZJ90Px4P8y3e/,url,,,,
 S03,hxxps://i[.]imgur[.]com/867Nfif[.]png,url,,,,
@@ -10,8 +10,8 @@ S04,c8aae837b8187fba9075666e70c7b78e0895127ccb25890756ede549c1e113e9,sha256,not 
 S04,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,sha256,n/a,,,"empty payload (SHA-256 of 0 bytes), stripped in dataset, not enrichable"
 S05,hxxp://www[.]w3[.]org/1999/xhtml,url,,,,
 S05,hxxps://cgh2p4vv[.]r[.]ap-northeast-1[.]awstrack[.]me/I0/0106019fb3b79460-38c36725-4e09-48fb-b530-569afba7c10f-000000/wqXntAgFALHX6-1aSyVRVxt20gc=258,url,,,,
-S06,hxxp://www[.]w3[.]org/1999/xhtml,url,,,,
-S06,"hxxps://fonts[.]googleapis[.]com/css?family=Poppins:400,700",url,,,,
+S06,hxxp://www[.]w3[.]org/1999/xhtml,url,n/a,n/a,,"Noise: template resource (XML namespace or Google Fonts), not an IOC"
+S06,"hxxps://fonts[.]googleapis[.]com/css?family=Poppins:400,700",url,n/a,n/a,,"Noise: template resource (XML namespace or Google Fonts), not an IOC"
 S07,hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd,url,,,,
 S07,hxxps://book[.]coinkiteadvisory[.]com/,url,,,,
 S08,hxxp://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd,url,,,,
