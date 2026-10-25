@@ -1,5 +1,5 @@
 sample_id,ioc,type,vt_detections,urlscan_verdict,abuseipdb_score,notes
-S01,hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176,url,REPLACE: x/y from VirusTotal,REPLACE: urlscan result,,"REPLACE: domain age, what the page showed"
+S01,hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176,url,your VirusTotal result,your URLScan result,,"creation date, what you saw"
 S02,73a0e5d5582ec223d1d4216df506c5ce6961948f76d39f73a84e966b607ea1b7,sha256,25/62,,,"Malicious. Amazon impersonation PDF, VT AI analysis: credential-harvest lure, no JS"
 S03,hxxp://williamcooklaw[.]com/KJexQY2h3iSUzCfdpw5D4r/UX/P7jv2a5ck4dqCKEw22yQrYuq/Mdrx7Bck/nOFCKryK61aJeTbCKOEn/ree/862dmGpL5jZMSlOztCaa/rve7_7M/KU0OxwNLgTxvLNG6XwOarD/7Mree/15KAJanvAJY5DQn6BVa9U/vY_M/WAFuZun0tfw0C27LCRVmcLj8/e5e_rx5/ORaueJJNKZJ90Px4P8y3e/,url,,,,
 S03,hxxps://i[.]imgur[.]com/867Nfif[.]png,url,,,,
