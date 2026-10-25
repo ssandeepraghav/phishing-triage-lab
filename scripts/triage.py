@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Parse .eml files: auth results, header mismatches, IOCs, attachment hashes."""
-import csv, hashlib, re, sys
+import csv, hashlib, ipaddress, re, sys
 from email import policy
 from email.parser import BytesParser
 from email.utils import parseaddr
@@ -8,6 +8,17 @@ from pathlib import Path
 
 URL_RE = re.compile(r'https?://[^\s<>"\')\]]+', re.I)
 IP_RE = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}\b')
+
+def public_ips(text):
+    out = []
+    for ip in IP_RE.findall(text):
+        try:
+            a = ipaddress.ip_address(ip)
+        except ValueError:
+            continue
+        if a.is_global:
+            out.append(ip)
+    return out
 
 def defang(s):
     return s.replace("http", "hxxp").replace(".", "[.]")
@@ -41,7 +52,7 @@ def analyze(path):
             hashes.append(hashlib.sha256(data).hexdigest())
 
     received = [str(r) for r in msg.get_all("Received", [])]
-    hop_ips = [ip for r in reversed(received) for ip in IP_RE.findall(r)]
+    hop_ips = [ip for r in reversed(received) for ip in public_ips(r)]
 
     return {
         "sample_id": Path(path).stem,

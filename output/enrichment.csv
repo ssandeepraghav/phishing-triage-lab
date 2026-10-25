@@ -7,7 +7,7 @@ S04,hxxps://leedsbeckett[.]ac[.]uk/disclaimer/email,url,,,,
 S04,hxxps://teams[.]microsoft[.]com/l/meetup-join/19%3ameeting_NTk5ZjdjZmUtNTkxOC00YTE2LTliOTMtODI5MmE2MWRhMmRk%40thread[.]v2/0?context=%7b%22Tid%22%3a%22d79a8112-4fbe-417a-a112-cd0fb490d85c%22%2c%22Oid%22%3a%22a5b4396d-3afc-4bc3-a55c-5573ea810ee2%22%7d,url,,,,
 S04,8ae9bfe9b4d2701ba7de0904e5efca621d42b8b0a32c3e1a400b02876a0febc3,sha256,0/61,,,"Benign PNG (KR0001), likely inline logo"
 S04,c8aae837b8187fba9075666e70c7b78e0895127ccb25890756ede549c1e113e9,sha256,not found,,,Never seen by VT. Not evidence of safety. Verdict rests on sender/auth/lure
-S04,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,sha256,,,,"empty payload (SHA-256 of 0 bytes), stripped in dataset, not enrichable"
+S04,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,sha256,n/a,,,"empty payload (SHA-256 of 0 bytes), stripped in dataset, not enrichable"
 S05,hxxp://www[.]w3[.]org/1999/xhtml,url,,,,
 S05,hxxps://cgh2p4vv[.]r[.]ap-northeast-1[.]awstrack[.]me/I0/0106019fb3b79460-38c36725-4e09-48fb-b530-569afba7c10f-000000/wqXntAgFALHX6-1aSyVRVxt20gc=258,url,,,,
 S06,hxxp://www[.]w3[.]org/1999/xhtml,url,,,,
@@ -34,14 +34,14 @@ S19,hxxp://vigit88[.]com/4ZfDRR22523uqiE1655zzqksvwexi107PMDMXJRHQSVFVKC76086SOQ
 S19,hxxp://vigit88[.]com/5vYTWU22523PVCk1655gbvmwanspr107CEWGTMUQILDHLWE76086UAMU640516E6,url,,,,
 S20,hxxp://vigit88[.]com/4FbTne22923QUIh1672tnlyxhtwhq124YXWOMRUFJRAZUYN105755HSBX632873A1,url,,,,
 S20,hxxp://vigit88[.]com/4PxLzI22923Ifae1672htyxsapdux124BVJFEBCMZSSSLFU105755AXYL632873u1,url,,,,
-S01,89.144.44.2,ip,,,,
+S01,89.144.44.2,ip,,,0%,"Poland, MSCode.pl hosting, 1 report. Microsoft impersonation from a non-Microsoft host; clean score is not evidence of safety"
 S03,72.145.11.119,ip,,,,
-S04,41.31.13.34,ip,,,,
+S04,41.31.13.34,ip,,,0%,"South Africa, Vodacom fixed-line ISP, 0 reports. Residential-type IP sending mail, possible compromised host"
 S05,23.251.234.101,ip,,,,
-S06,50.31.205.206,ip,,,,
-S07,54.240.14.57,ip,,,,
-S08,54.240.14.59,ip,,,,
+S06,50.31.205.206,ip,,,16%,"USA, ActiveCampaign/Postmark mail infra, 28 reports. Shared platform, likely abused bulk sender"
+S07,54.240.14.57,ip,,,n/a,"AWS SES, abused bulk sender, not an IP-reputation signal"
+S08,54.240.14.59,ip,,,n/a,"AWS SES, abused bulk sender, not an IP-reputation signal"
 S12,35.80.29.246,ip,,,,
 S13,18.234.199.118,ip,,,,
-S17,172.238.39.126,ip,,,,
-S18,54.240.9.39,ip,,,,
+S17,172.238.39.126,ip,,,0%,"USA, Linode VPS, 0 reports. New infrastructure, no reputation yet"
+S18,54.240.9.39,ip,,,n/a,"AWS SES, abused bulk sender, not an IP-reputation signal"
