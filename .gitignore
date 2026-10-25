@@ -1,0 +1,6 @@
+samples/
+*.eml
+*.exe
+*.zip
+.env
+__pycache__/
