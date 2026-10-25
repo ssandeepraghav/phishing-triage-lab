@@ -1,0 +1,21 @@
+sample_id,filename,original_file,theme,source
+S01,S01.eml,sample-10.eml,brand impersonation (Microsoft),phishing_pot
+S02,S02.eml,sample-1014.eml,brand impersonation (Amazon),phishing_pot
+S03,S03.eml,sample-10154.eml,credential harvesting,phishing_pot
+S04,S04.eml,sample-10017.eml,account change notice,phishing_pot
+S05,S05.eml,sample-10252.eml,credential harvesting,phishing_pot
+S06,S06.eml,sample-10019.eml,crypto wallet phishing,phishing_pot
+S07,S07.eml,sample-10235.eml,crypto brand impersonation,phishing_pot
+S08,S08.eml,sample-10239.eml,crypto hardware wallet phishing,phishing_pot
+S09,S09.eml,sample-10016.eml,crypto wallet phishing,phishing_pot
+S10,S10.eml,sample-10112.eml,account threat lure,phishing_pot
+S11,S11.eml,sample-10183.eml,fake invoice with attachment,phishing_pot
+S12,S12.eml,sample-10198.eml,fake invoice / payment,phishing_pot
+S13,S13.eml,sample-10050.eml,fake transaction document,phishing_pot
+S14,S14.eml,sample-10040.eml,payout verification lure,phishing_pot
+S15,S15.eml,sample-10155.eml,fake transfer confirmation,phishing_pot
+S16,S16.eml,sample-10276.eml,direct deposit lure,phishing_pot
+S17,S17.eml,sample-10273.eml,government impersonation,phishing_pot
+S18,S18.eml,sample-10152.eml,financial terms lure,phishing_pot
+S19,S19.eml,sample-10283.eml,fake security alert,phishing_pot
+S20,S20.eml,sample-10127.eml,reward lure,phishing_pot
