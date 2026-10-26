@@ -1,0 +1,9 @@
+// Motivated by S10, S15, S16, S19, S20: SPF and DKIM both failed and the message contains a URL.
+// Source: Microsoft Defender for Office 365 (EmailEvents joined to EmailUrlInfo)
+EmailEvents
+| where Timestamp > ago(1d)
+| where EmailDirection == "Inbound"
+| extend Auth = parse_json(AuthenticationDetails)
+| where tostring(Auth.SPF) =~ "fail" and tostring(Auth.DKIM) =~ "fail"
+| join kind=inner (EmailUrlInfo | project NetworkMessageId, Url, UrlDomain) on NetworkMessageId
+| project Timestamp, SenderFromAddress, SenderIPv4, Subject, Url, UrlDomain, NetworkMessageId

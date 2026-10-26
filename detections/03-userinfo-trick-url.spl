@@ -1,0 +1,6 @@
+`# Motivated by S17: hxxps://www[.]hotmail[.]com-...@dt3-...run[.]app (real host sits after the @).`
+`# Source: Splunk, email gateway or proxy logs with a url field`
+index=email OR index=proxy
+| regex url="^https?://[^/]*@"
+| rex field=url "^https?://(?<userinfo>[^@/]*)@(?<real_host>[^/:]+)"
+| table _time, sender, recipient, url, userinfo, real_host

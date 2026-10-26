@@ -1,0 +1,7 @@
+// Motivated by S04: attachments named "E-Statement ..." and "Privacy & Policy ..." with no extension.
+// Source: Microsoft Defender for Office 365 (EmailAttachmentInfo)
+EmailAttachmentInfo
+| where Timestamp > ago(1d)
+| where isnotempty(FileName)
+| where FileName !contains "."
+| project Timestamp, SenderFromAddress, RecipientEmailAddress, FileName, FileType, SHA256, NetworkMessageId
