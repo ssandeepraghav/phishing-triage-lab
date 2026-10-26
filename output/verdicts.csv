@@ -1,0 +1,16 @@
+sample_id,verdict,reason
+S03,Suspicious,Urgent account-verification lure; auth passes; 5 URLs not yet looked up
+S05,Suspicious,Generic "Complete Verification" lure; Return-Path flag is a subdomain false positive; URLs not looked up
+S06,Suspicious,Crypto wallet notice sent via ActiveCampaign infra (AbuseIPDB 16%); likely abused bulk sender
+S07,Suspicious,Crypto-vendor security advisory via AWS SES; auth passes; needs URL check
+S08,Suspicious,Hardware wallet verification lure; DMARC only bestguesspass; needs URL check
+S09,Benign/Spam,Bulk casino-style bonus promotion with 36 URLs; SPF fail but no credential lure seen
+S10,Suspicious,Account-blocked threat; SPF and DKIM fail; strong candidate for Malicious after URL lookup
+S12,Suspicious,Invoice lure with no URL or attachment; auth passes; likely a callback scam
+S13,Suspicious,"See attached transaction document" lure; auth passes; no URLs
+S14,Suspicious,Payout-verification template repeated across the dataset; SPF fail; 38 URLs not looked up
+S15,Suspicious,Fake transfer confirmation; SPF and DKIM fail
+S16,Suspicious,Direct-deposit authorization lure; SPF and DKIM fail
+S18,Suspicious,Trading-terms update lure via AWS SES; 17 URLs not looked up
+S19,Suspicious,Dutch fake device-security warning; SPF and DKIM fail
+S20,Suspicious,Guaranteed-reward account lure; SPF and DKIM fail
