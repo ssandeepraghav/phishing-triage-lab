@@ -1,10 +1,10 @@
 # Incident Report: S01
 
 ## Summary
-An email titled "Microsoft account unusual signin activity" claims to come from the Microsoft account team but was sent from a Polish hosting server with no authentication. Three different domains appear in From, Return-Path and Reply-To, and the body links to an unrelated tracking domain. The verdict is Suspicious.
+An email titled "Microsoft account unusual signin activity" claims to come from the Microsoft account team but was sent from a Polish hosting server with no authentication. Three different domains appear in From, Return-Path and Reply-To, and the body links to an unrelated tracking domain. The verdict is Malicious.
 
 ## Verdict
-**Suspicious.** Evidence: brand impersonation, lookalike sender domain, no SPF or DKIM, DMARC permerror, mismatched sender domains. URL result: 0/94 flagged on VirusTotal, URLScan: page offline. Playbook section 4 requires a confirmed bad URL or hash for Malicious, so the verdict reflects that, but blocking is still recommended.
+**Malicious.** Evidence: brand impersonation, lookalike sender domain, no SPF or DKIM, DMARC permerror, mismatched sender domains. URL result: 10/93 flagged (mostly Phishing, community score -79) on VirusTotal, URLScan: not scanned. The linked domain is flagged by 5 or more VirusTotal engines, which meets the playbook section 4 rule for Malicious.
 
 ## Timeline
 - Email received / reported: Fri, 8 Sep 2023 05:47:04 +0000 (Date header of the sample)
@@ -26,7 +26,7 @@ An email titled "Microsoft account unusual signin activity" claims to come from 
 | IP | 89.144.44.2 | AbuseIPDB 0%, Poland, hosting provider |
 | Domain | access-accsecurity[.]com | Lookalike sender domain |
 | Email | sotrecognizd@gmail[.]com | Reply-To address |
-| URL | hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176 | VirusTotal 0/94 flagged; URLScan page offline; domain created 2023, no content served |
+| URL | hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176 | VirusTotal 10/93 flagged (mostly Phishing, community score -79); URLScan not scanned; domain flagged on VirusTotal, scan 2026-10-25 |
 
 ## MITRE ATT&CK mapping
 | Technique | Evidence |
