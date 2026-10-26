@@ -4,7 +4,7 @@
 An email titled "Microsoft account unusual signin activity" claims to come from the Microsoft account team but was sent from a Polish hosting server with no authentication. Three different domains appear in From, Return-Path and Reply-To, and the body links to an unrelated tracking domain. The verdict is Suspicious.
 
 ## Verdict
-**Suspicious.** Evidence: brand impersonation, lookalike sender domain, no SPF or DKIM, DMARC permerror, mismatched sender domains. URL result: your VirusTotal result on VirusTotal, URLScan: your URLScan result. Playbook section 4 requires a confirmed bad URL or hash for Malicious, so the verdict reflects that, but blocking is still recommended.
+**Suspicious.** Evidence: brand impersonation, lookalike sender domain, no SPF or DKIM, DMARC permerror, mismatched sender domains. URL result: REAL RESULT on VirusTotal, URLScan: REAL RESULT. Playbook section 4 requires a confirmed bad URL or hash for Malicious, so the verdict reflects that, but blocking is still recommended.
 
 ## Timeline
 - Email received / reported: Fri, 8 Sep 2023 05:47:04 +0000 (Date header of the sample)
@@ -26,7 +26,7 @@ An email titled "Microsoft account unusual signin activity" claims to come from 
 | IP | 89.144.44.2 | AbuseIPDB 0%, Poland, hosting provider |
 | Domain | access-accsecurity[.]com | Lookalike sender domain |
 | Email | sotrecognizd@gmail[.]com | Reply-To address |
-| URL | hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176 | VirusTotal your VirusTotal result; URLScan your URLScan result; creation date, what you saw |
+| URL | hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176 | VirusTotal REAL RESULT; URLScan REAL RESULT; REAL RESULT |
 
 ## MITRE ATT&CK mapping
 | Technique | Evidence |
