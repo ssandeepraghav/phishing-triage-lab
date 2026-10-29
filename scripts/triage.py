@@ -73,6 +73,8 @@ def analyze(path):
 if __name__ == "__main__":
     src = Path(sys.argv[1] if len(sys.argv) > 1 else "samples")
     rows = [analyze(p) for p in sorted(src.glob("S*.eml"))]
+    if not rows:
+        sys.exit("No S*.eml files found. Add your own .eml files and re-run.")
     out = Path("output/parsed_results.csv")
     with open(out, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=rows[0].keys())
